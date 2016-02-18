@@ -1,0 +1,39 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+#sheet {
+    margin-top:10px;
+    margin-left: 10px;
+}
+table {
+    border-collapse: collapse;
+    width: 600px;
+    margin-left: 5px;
+}
+
+.noborder {
+    border: none;
+    width: 150px;
+}
+.bottomb {
+    border-bottom: 1px solid black;
+}
+.visible {
+
+}
+.visible td {
+    border: 1px solid black;;
+}
+
+sup {
+    font-style: normal;
+    font-size: 10px;
+    text-align: center;
+}
+.center {
+    text-align: center;
+}
+.period td:first-child {
+    width:120px;
+}

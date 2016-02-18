@@ -1,0 +1,151 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+table{
+    padding-left: 10px;
+    border-collapse: collapse;
+    width: 500px;
+
+}
+table td {
+}
+td{
+    border:2px solid black;
+    border-collapse: collapse;
+}
+.container {
+    margin: 0 auto;
+    width: 800px;
+    height: 804px;
+    border-right: 4px dotted gray;
+    border-bottom: 4px dotted gray;
+}
+
+.container .block:first-child {
+    border-bottom: 4px solid black;
+    margin-top:10px;
+}
+.block {
+
+    height:400px;
+    width: 800px;
+    background-color: white;
+    clear: both;
+}
+.empty {
+    float: left;
+    height: 400px;
+    width: 250px;
+    background-color: white;
+    border-right: 2px solid black;
+    color: black;
+    font-family: "Segoe UI Light";
+}
+.empty h3 {
+    padding-left: 40px;
+    padding-top: 20px;
+    letter-spacing: 3px;
+}
+.empty h5 {
+
+    margin: 300px 20px 5px 150px;
+}
+.fill {
+    font-family: Verdana;
+    color: black;
+    padding-top: 10px;
+
+}
+.fill h4 {
+    font-size:14px;
+    text-align: center;
+}
+.phone {
+    text-align: center;
+
+    line-height: 1.8em;
+    font-weight:bold;
+}
+
+.phone tr td:first-child {
+    font-weight: normal;
+    border: 0;
+    width: 200px;
+    text-align: left;
+}
+.noborder {
+    width:530px;
+    margin-top:15px;
+}
+.noborder td{
+    border:0;
+}
+.noborder td:first-child{
+    width:110px;
+}
+#botbor {
+    width: 300px;
+    border-bottom: 1px solid black;
+    color: black;
+    text-align: center;
+}
+.sub {
+    font-style: italic;
+    font-size: 10px;
+    text-align: center;
+}
+.sub td {
+    border:0;
+}
+.period {
+    margin-top: 10px;
+}
+.period tr td {
+    width:25px;
+    height: 15px;
+}
+.period tr td:first-child {
+    width: 90px;
+    border:0;
+}
+/*
+.period tr td:nth-child(2) {
+    background-size: cover;
+    background-image: url('cross.png');
+    -webkit-background-image: url('cross.png');
+ }
+.period tr td:nth-child(3) {
+    background-size: cover;
+    background-image: url('cross.png');
+   -webkit-background-image: url('cross.png');
+}
+*/
+#center {
+    text-align: center;
+    font-size: larger;
+
+}
+.period tr td:nth-child(14) {
+    border: 0;
+}
+.period tr td:nth-child(15) {
+    border:0;
+}
+.res {
+    text-align: center;
+    margin-top: 15px;
+}
+.res tr td:first-child {
+
+}
+.small {
+    font-size: smaller;
+}
+.last {
+    margin-top: 20px;
+
+}
+.last td {
+    height:25px;
+}

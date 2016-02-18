@@ -1,0 +1,18 @@
+/*CSS CLassWOrk*/
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+  background: #293f50;
+  color: #888;
+  font: 300 16px/22px "Roboto", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.primary-header a,
+.primary-footer a {
+  color: #fff;
+}
+.primary-header a:hover,
+.primary-footer a:hover {
+  color: #648880;
+}
