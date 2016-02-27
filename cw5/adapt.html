@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Адаптивність</title>
+</head>
+<body>
+<style>
+    .menu {
+        display: inline-block;
+        width: 200px;
+    }
+    nav {
+        background: #aaa;
+        position: absolute;
+        height: 20px;
+    }
+    nav:nth-child(2) {
+        left:200px;
+    }
+    nav>ul {
+        list-style: none;
+        display: inline;
+        background: #eee;
+    }
+    nav li {
+        display: inline;
+    }
+    .menu_button {
+        display: none;
+    }
+    @media screen and (max-width: 640px){
+        nav>ul {
+            display: none;
+        }
+        nav>ul>li {
+            display: block;
+        }
+        .menu_button {
+            display: block;
+        }
+        nav:hover ul {
+            display: block;
+        }
+        nav:hover .menu_button {
+            display: none;
+        }
+    }
+</style>
+<header>
+    <nav class="menu">
+        <ul>
+            <li><a href="#">about</a></li>
+            <li><a href="#">posts</a></li>
+            <li><a href="#">contacts</a></li>
+            <li><a href="#">events</a></li>
+        </ul>
+        <div class="menu_button">
+            menu
+        </div>
+    </nav>
+    <nav class="menu">
+        <ul>
+            <li><a href="#">zzz</a></li>
+            <li><a href="#">xxx</a></li>
+            <li><a href="#">ccc</a></li>
+        </ul>
+        <div class="menu_button" onclick="javascript: menu.className = (menu.className == 'open') ? '': 'open';">
+            menu
+        </div>
+    </nav>
+    <div>
+        sdajsdhjashdkjahsdkj<br>
+        sdajsdhjashdkjahsdkj<br>
+        sdajsdhjashdkjahsdkj<br>
+        sdajsdhjashdkjahsdkj<br>
+        sdajsdhjashdkjahsdkj<br>
+        sdajsdhjashdkjahsdkj<br>
+        sdajsdhjashdkjahsdkj<br>
+        sdajsdhjashdkjahsdkj<br>
+        sdajsdhjashdkjahsdkj<br>
+        sdajsdhjashdkjahsdkj<br>
+        sdajsdhjashdkjahsdkj<br>
+        sdajsdhjashdkjahsdkj<br>
+        sdajsdhjashdkjahsdkj<br>
+        sdajsdhjashdkjahsdkj<br>
+        sdajsdhjashdkjahsdkj<br>
+        sdajsdhjashdkjahsdkj<br>
+        sdajsdhjashdkjahsdkj<br>
+        sdajsdhjashdkjahsdkj<br>
+        sdajsdhjashdkjahsdkj<br>
+        sdajsdhjashdkjahsdkj<br>
+        sdajsdhjashdkjahsdkj<br>
+        sdajsdhjashdkjahsdkj<br>
+        sdajsdhjashdkjahsdkj<br>
+        sdajsdhjashdkjahsdkj<br>
+        sdajsdhjashdkjahsdkj<br>
+        sdajsdhjashdkjahsdkj<br>
+        sdajsdhjashdkjahsdkj<br>
+        sdajsdhjashdkjahsdkj<br>
+        sdajsdhjashdkjahsdkj<br>
+        sdajsdhjashdkjahsdkj<br>
+        sdajsdhjashdkjahsdkj<br>
+    </div>
+</header>
+</body>
+</html>

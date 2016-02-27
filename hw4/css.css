@@ -1,0 +1,258 @@
+/*This is CSS for first website*/
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    
+}
+body {
+    width: 1260px;
+    margin: 0 auto;
+    background-color: white;
+    font-family: Arial Narrow;
+  background-image: url(img/bodybg.png);
+   
+}
+body>div {
+    width: 960px;
+    margin: 0 auto;
+}
+hr {
+    height: 5px;
+    margin: 0 auto;
+    background-color: #7e7e7e;
+    border-color: #7e7e7e;
+}
+a {
+    text-decoration: none;
+    color: #b2b2b2;
+}
+/*HEADER*/
+header {
+    position: relative;
+}
+#square {
+    width: 10px;
+    height: 10px;
+    border: 3px solid #29c5e6;
+    position: absolute;
+    left: 0px;
+    top: 12px;
+}
+header h1 {
+    float: left;
+    padding-left: 0.5em;
+    font-family: Arial;
+    font-size: 2em;
+    margin: 0.5em auto;
+    color: #7e7e7e;
+}
+header form {
+    float: right;
+    margin: 1.75em auto;
+}
+button {
+    background: #29c5e6;
+    color: white;
+    border: 1px solid #29c5e6;
+    width: 36px;
+    height: 30px;
+    font-family: Arial Narrow;
+    font-weight: bold;
+    margin-left: -3px;
+}
+input {
+    width:157px;
+    height: 30px;
+    border: 1px solid;
+    border-color: #e7e7e7 transparent #e7e7e7 #e7e7e7;
+    background-color: #f3f3f3;
+    padding-left: 10px;
+}
+.horizontal {
+    clear: both;
+    width: 100%;
+}
+.horizontal a {
+    line-height: 38px;
+    display: block;
+}
+.horizontal ul {
+    border: 1px solid #e7e7e7;
+    height: 38px;
+}
+
+.horizontal li {
+    display: block;
+    height: 38px;
+    list-style-type: none;
+    border: 0;
+    float: left;
+    width: 12.5%;
+    text-align: center;
+    background: #f3f3f3;
+    font-weight: bold;  
+}
+.horizontal li a:active {
+    background-color: #29c5e6;
+    color: white;
+}
+/*CONTENT*/
+/*CONTENT*/
+.heading {
+    margin-top: 30px;
+    height: 40px;
+    background: repeating-linear-gradient(
+  -45deg,
+  white,
+  transparent 3px,
+  #e7e7e7 3px,
+  #e7e7e7 4px
+); 
+} 
+.heading h2 {
+    padding: 0 14px;
+    /*background-color: #fff;*/
+    display: inline-block;
+    margin-left: 20px;
+    font-size: 35px;
+    color: #7e7e7e;
+    background-image: url(img/bodybg.png);
+}
+
+
+/*VERTICAL NAVIGATION*/
+.menu {
+    list-style-type: square;
+    color: #29c5e6;
+    font-size: 14pt;
+    border-top: 1px solid #dfdfdf;
+    border-left: 1px solid #dfdfdf;
+    border-right: 1px solid #dfdfdf;
+}
+.menu:last-of-type {
+    border-bottom: 1px solid #dfdfdf;
+}
+.menu a {
+    padding: 13px 0 13px 20px;
+}
+.menu a:active {
+    color: #29c5e6; 
+    background-color: #f3f3f3;
+}
+.vertical a {
+    display: block;
+    background-color: #f3f3f3;
+}
+.submenu {
+    list-style-type: none;
+    font-size: 12pt;
+    border-top: 1px solid #dfdfdf;
+    border-left: 1px solid #dfdfdf;
+    border-right: 1px solid #dfdfdf; 
+}
+.submenu a {
+    background-color: #e7e7e7;
+    color: #8f8f8f;
+    
+    padding: 11px 0 11px 35px;
+}
+.submenu ul{
+   
+}
+aside {
+    margin-top: 30px;
+    float: left;
+    width: 248px;
+}
+.offices {
+    margin-top: 30px;
+    width: 248px;
+    height: 244px;
+    background-color: #f3f3f3;
+    border-bottom: 1px solid #dfdfdf;
+}
+.offices h4 {
+    background-color: #29c5e6;
+    color: #fff;
+    padding: 13px 0 13px 11px;
+}
+.offices>div {
+    margin: 10px;
+    width: 228px;
+    height: 180px;
+    background-color: #e2e2e2;
+}
+
+/*CONTENT SECTION*/
+section {
+    margin-top: 30px;
+    width: 680px;
+    float: right;
+}
+.subhead {
+    background-color: #29c5e6;
+    height: 44px;
+    color: #fff;
+    font-size: 24px;
+    line-height: 44px;
+    padding-left: 10px;
+}
+.pics div {
+    display: inline-block;
+    background-color: #fff;
+    border: 1px solid #c9c9c9;
+}
+.big div {
+    width: 323px;
+    height: 178px;
+}
+.big div:first-child {
+    margin-bottom: 40px;
+}
+.big div img {
+    width: 321px;
+    height: 176px;
+}
+.pics div img {
+    margin: 1px;
+    background-color: #e2e2e2;
+}
+.pics h4 {
+    color: #8f8f8f; 
+}
+.big h4 {
+    text-align: center; 
+}
+.big div:nth-child(odd) {
+    margin-right: 26px;
+}
+section p {
+    margin: 16px auto;
+    font-family: Tahoma;
+    font-size: 14px;
+    line-height: 20px;
+    color: #8f8f8f;
+}
+.small {
+    margin-top: 20px;
+}
+.small div {
+    width: 98px;
+    height: 98px;
+}
+.small div img {
+    width: 96px;
+    height: 96px;
+}
+.small h4 {
+    text-align: left; 
+}
+.small div {
+    margin-right: 41px; /*ПОЯВЛЯЕТСЯ РАССТОЯНИЕ МЕЖДУ ДИВАМИ ПОЧЕМУ?????*/
+}
+.small div:last-child {
+    margin-right: 0;
+}

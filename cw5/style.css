@@ -1,0 +1,37 @@
+/*CSS for Classwork 5
+MEADIA QUERIES
+
+
+*/
+
+nav {
+    position: absolute;
+}
+ul {
+    list-style: none;
+}
+nav ul li {
+    display: inline;
+    background-color: lavender;
+    border: 2px dashed pink;
+    
+}
+a {
+    text-decoration: none;
+    color: darkred;
+    font-family: Tahoma;
+}
+.menu_button {
+    display: none;
+}
+@media only screen and (max-width:640px) {
+    .menu_button {
+        display: block;
+    }
+    nav>ul {
+        display: none;
+    }
+    .menu_button:hover {
+        
+    }
+}

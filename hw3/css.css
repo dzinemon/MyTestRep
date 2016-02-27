@@ -1,0 +1,127 @@
+/*This is css for likefacebook*/
+* {
+padding: 0;
+margin: 0
+}
+html,body {
+    height: 100%;
+}
+.container {
+    margin: 0 auto;
+    color: #333333;
+    width: 50%;
+    padding: 1%;
+    font-size: 0.75em;
+    font-family:'Lucida Grande', Tahoma, Verdana, Arial, sans-serif;
+}
+.container>div {
+    min-height: 80%;
+}
+.quote {
+    position: relative;
+    padding: 1%;
+    margin: 10px;
+    border-radius: 0.3em;
+    background-color: #f9f5f5;
+  /*  box-shadow: 0 0 2px 1px lightgray; */
+}
+.l {
+    text-align: left;
+}
+.r {
+    text-align: right;
+}
+.l:before {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    left: -1em;
+    top:0.3em;
+    border: 0.5em solid;
+    border-color:  #f9f5f5 #f9f5f5 transparent 
+    transparent;
+}
+.r:before {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    right: -1em;
+    top:0.3em;
+    border: 0.5em solid;
+     border-color: #f9f5f5 transparent 
+    transparent #f9f5f5;
+}
+form {
+   text-align: center;
+}
+textarea {
+    position: relative;
+    height: 7em;
+    width: 100%;
+    border: 2px double #97EEF7;
+    margin-bottom: 10px;
+    
+}
+ul {
+    position: relative;
+    top: -45px;
+}
+li {
+    float: left;
+    list-style-type: none;
+    margin: 0 2%;
+    width: 8%;
+}
+button {
+    background: none;
+    border: none;
+    width: 24px;
+    height: auto;
+}
+button img {
+    width: 24px;
+}
+svg {
+    width: inherit;
+    height: auto;
+    fill: lightblue;
+}
+path {
+    fill: lightblue;
+}
+button[type="submit"] {
+    position: relative;
+    top: 40px;
+    z-index: 2;
+    float: right;
+    margin-right: 10px;
+}
+/*@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+    and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+      .container {
+          font-size: 1em;
+          width: 100%;
+      }
+      button {
+    width: 18px;
+    height: auto;
+}
+} */
+@media screen 
+  and (min-device-width: 320px) 
+and (max-device-width: 668px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+      .container {
+          width: 95%;
+      }
+          button {
+        width: 14px;
+        height: auto;
+}
+}
