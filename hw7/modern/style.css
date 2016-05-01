@@ -1,0 +1,70 @@
+/*This is css for HW7*/
+/*обнуляем отступы*/
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+/*Задаем для боди свойства flex...делаем все стороны в ряд row чтобы они были в одну линию*/
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+/*Задаем стороне FLEX фиксированный размер, границу и свойства flex, с учетом того, что внутри одной стороны у нас будет девять блоков, а внутри этих блоков уже будем создавать кружочки, там где нужно*/
+.flex {
+    width: 120px;
+    height: 120px;
+    border: 1px solid black;
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+}
+
+
+/*Это параметры дивов которые находятся внутри FLEX дива, ширина с учетом того что они должны вместится внутрь FLEXa  !!! ГРАНИЦЫ не задаем!!!!*/
+.flex div {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*если есть такая flex div div вложенность то внутри нашего маленького блока появиться кружочек*/
+.flex div div {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background-color: black;
+}
+
+/*если закоментить
+все что ниже, 
+то кружочки будут черные*/
+
+.flex:first-child div div{
+    background-color: yellowgreen;
+}
+.flex:nth-child(2) div div{
+    background-color: fuchsia;
+}
+.flex:nth-child(3) div div{
+    background-color: deeppink;
+}
+.flex:nth-child(4) div div{
+    background-color: cornflowerblue;
+}
+.flex:nth-child(5) div div{
+    background-color: orangered;
+}
+.flex:nth-child(6) div div{
+    background-color: darkred;
+}

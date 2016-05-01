@@ -1,0 +1,101 @@
+/*Это супер 3Д куб с кружочками разных цветов*/
+body {
+  perspective: 500px;
+  perspective-origin: center -5em;
+  }
+.side,
+.container {
+  width: 10em;
+  height: 10em;
+  }
+
+.container {
+  margin: 5em auto 0;
+ /* border: 2px dotted white;*/
+  transform-style: preserve-3d;
+  animation: rotate 10s infinite linear;
+  }
+  .container:before,
+  .container:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 10em;
+    height: 10em;
+    /*border: 2px dotted white;*/
+    }
+    .container:before {
+      transform: rotateX(120deg);  
+      }
+    .container:after {
+      transform: rotateY(120deg);  
+      }
+
+.side {
+  position: absolute;
+/*  border: 2px solid white;*/
+  opacity: 1;
+  display: flex;
+  flex-wrap: wrap;
+   /* box-shadow:inset 2px 2px 2px ligthgray;*/
+  }
+.side div {
+    width: 33.333333%;
+    height: 33.333333%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.side div div {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+}
+.front div div {
+    background-color: red;
+}
+.back div div {
+    background-color: darkblue;
+}
+.left div div {
+    background-color: fuchsia;
+}
+.right div div {
+    background-color: yellow;
+}
+.top div div {
+    background-color: brown;
+}
+.bottom div div {
+    background-color: purple;
+}
+.back {
+  transform: translateZ(-5em);
+  background: orange;
+  }
+.left {
+  transform: translateX(-5em) rotateY(90deg);
+  background: lightgreen;
+  }
+.right {
+  transform: translateX(5em) rotateY(90deg);
+  background: yellowgreen;
+  }
+.top {
+  transform: translateY(-5em) rotateX(90deg);
+  background: skyblue;
+  }
+.bottom {
+  transform: translateY(5em) rotateX(90deg);
+  background: steelblue;
+  }
+.front {
+  transform: translateZ(5em);
+  background: gold;
+  }
+@keyframes rotate {
+  100% {
+    transform: rotatex(360deg) rotateY(360deg) rotateZ(360deg);
+  }
+}

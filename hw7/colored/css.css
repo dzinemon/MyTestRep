@@ -1,0 +1,69 @@
+/*This is css for HW7*/
+
+body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.side {
+    width: 200px;
+    height: 200px;
+    background-color: #f3f3f3;
+    border-radius: 20px;
+    border: 2px solid #87c4d6;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.side div div {
+    width: 30px;
+    height: 30px;
+    margin: 20px;
+    border-radius: 100%;
+    background-color: #cc3737;
+    animation: random 16s infinite;
+}
+
+@keyframes random {
+    10% {background-color: #cc3773;} 
+    20% {background-color: #c737cc;}
+    30% {background-color: #4537cc;}
+    40% {background-color: #37a7cc;}
+    50% {background-color: #37cc8b;}
+    60% {background-color: #37cc49;}
+    70% {background-color: #99cc37;}
+    80% {background-color: #faf334;}
+    90% {background-color: #fa8c34;}
+    100% {background-color: #fc9696;}
+}
+.side:first-child {
+    align-items: center; 
+}
+
+.side:last-child div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.side:nth-child(5) div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.side:nth-child(4) div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.end {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
